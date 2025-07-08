@@ -14,4 +14,5 @@ npx tailwindcss init -p
 greatStack video ended spotify-fullstack : 4:19:18
 
 
+backend run npm start
 
