@@ -46,10 +46,14 @@ connectCloudinary();
 
 // ✅ Correct CORS setup — allow only your frontend domain
 app.use(cors({
-  origin: 'https://spotify-full-stack-ten.vercel.app', // Your frontend URL (no trailing slash!)
+  origin: [
+    'https://spotify-full-stack-ten.vercel.app',
+    'https://spotify-full-stack-admin-self.vercel.app'
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
+
 
 // middlewares
 app.use(express.json());
